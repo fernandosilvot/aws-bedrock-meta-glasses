@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2" project="cameraaccess">
+
+    <!-- Home Screen -->
+    <string name="register_button_title">Conectar mis lentes</string>
+    <string name="unregister_button_title">Desconectar</string>
+    <string name="stream_button_title">Iniciar streaming</string>
+    <string name="stop_stream_button_title">Parar streaming</string>
+    <string name="home_tip_video_title">Visión IA</string>
+    <string name="home_tip_audio_title">Audio Abierto</string>
+    <string name="home_tip_hands_title">IA Manos Libres</string>
+    <string name="home_tip_video">Transmite video desde tus Meta Glasses y analiza los frames con AWS Bedrock AI.</string>
+    <string name="home_tip_audio">Escucha las respuestas de la IA mientras sigues conectado con lo que pasa a tu alrededor.</string>
+    <string name="home_tip_hands">Recibe análisis de IA en tiempo real sin usar las manos, con Claude en AWS Bedrock.</string>
+    <string name="home_redirect_message">Te vamos a redirigir a la app Meta AI para confirmar tu conexión.</string>
+
+    <!-- Stream Screen -->
+    <string name="live_stream">En vivo</string>
+
+    <!-- Non Stream Screen -->
+    <string name="camera_access_icon_description">Ícono de la app</string>
+    <string name="non_stream_screen_description">Toca Iniciar streaming para transmitir video desde tus lentes y analizarlo con AWS Bedrock AI.</string>
+    <string name="created_by">Creado por Fernando Silva T. · fernandosilvot.cl</string>
+    <string name="non_stream_screen_title">Transmite a través de tus lentes</string>
+    <string name="waiting_for_active_device">Esperando un dispositivo activo</string>
+
+    <!-- SharePhotoDialog -->
+    <string name="photo_captured">Foto capturada</string>
+    <string name="captured_photo">Foto capturada</string>
+    <string name="capture_photo">Sacar foto</string>
+    <string name="share">Compartir</string>
+
+    <!-- Mock Device Kit Screen -->
+    <string name="mock_device_kit_title">Kit de Dispositivo Mock</string>
+    <string name="devices_paired_count"><xliff:g id="count">%1$d</xliff:g> dispositivo(s) emparejados</string>
+    <string name="mock_device_kit_description">Esta pantalla permite simular dispositivos, capacidades y estados mock</string>
+    <string name="pair_rayban_meta">Emparejar RayBan Meta</string>
+    <string name="unpair">Desemparejar</string>
+    <string name="power_on">Encender</string>
+    <string name="power_off">Apagar</string>
+    <string name="unfold">Abrir</string>
+    <string name="fold">Cerrar</string>
+    <string name="don">Poner</string>
+    <string name="doff">Sacar</string>
+    <string name="select_video">Elegir video</string>
+    <string name="has_camera_feed">Tiene feed de cámara</string>
+    <string name="no_camera_feed">Sin feed de cámara</string>
+    <string name="select_image">Elegir imagen</string>
+    <string name="has_captured_image">Tiene imagen capturada</string>
+    <string name="no_captured_image">Sin imagen capturada</string>
+
+    <!-- Getting Started Sheet -->
+    <string name="getting_started_title">Cómo empezar</string>
+    <string name="getting_started_tip_permission">Primero, la app necesita permiso para usar la cámara de tus lentes.</string>
+    <string name="getting_started_tip_led">El LED de captura le avisa a los demás cuando estás grabando o en vivo.</string>
+    <string name="getting_started_tip_photo">Saca fotos tocando el botón de cámara.</string>
+    <string name="getting_started_continue">Continuar</string>
+</resources>

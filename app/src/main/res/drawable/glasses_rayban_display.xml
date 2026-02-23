@@ -1,0 +1,110 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="120dp"
+    android:viewportWidth="280"
+    android:viewportHeight="120">
+
+    <!-- Ray-Ban Meta Display - Wayfarer with HUD -->
+
+    <!-- Left temple -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M2,42 Q0,40 0,38 L0,34 Q0,31 3,31 L18,34 L18,46 L3,48 Q0,48 0,46 Z" />
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M18,34 L28,32 L28,48 L18,46 Z" />
+
+    <!-- Left lens frame -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M28,18 Q28,8 42,8 L88,8 Q102,8 104,18 L106,52 Q108,72 92,76 L48,78 Q28,78 28,62 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M34,22 Q34,14 46,14 L84,14 Q96,14 98,22 L99,50 Q100,66 88,70 L52,72 Q34,72 34,58 Z" />
+    <path
+        android:fillColor="#232F3E"
+        android:pathData="M40,20 Q42,16 54,16 L70,16 Q74,16 74,20 L73,30 Q72,34 68,34 L46,35 Q40,35 40,30 Z" />
+
+    <!-- Bridge -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M104,28 Q110,20 116,18 L124,18 Q130,20 136,28 L136,36 Q130,28 124,26 L116,26 Q110,28 104,36 Z" />
+
+    <!-- Right lens frame -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M136,18 Q138,8 152,8 L198,8 Q212,8 212,18 L212,62 Q212,78 192,78 L148,76 Q132,72 134,52 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M142,22 Q142,14 154,14 L194,14 Q206,14 206,22 L206,58 Q206,72 190,72 L152,70 Q140,66 141,50 Z" />
+
+    <!-- HUD Display area - glowing rectangle inside right lens -->
+    <path
+        android:fillColor="#FF9900"
+        android:fillAlpha="0.15"
+        android:pathData="M152,24 L192,24 Q196,24 196,28 L196,52 Q196,56 192,56 L152,56 Q148,56 148,52 L148,28 Q148,24 152,24 Z" />
+    <path
+        android:strokeColor="#FF9900"
+        android:strokeWidth="1.5"
+        android:strokeAlpha="0.6"
+        android:fillColor="#00000000"
+        android:pathData="M152,24 L192,24 Q196,24 196,28 L196,52 Q196,56 192,56 L152,56 Q148,56 148,52 L148,28 Q148,24 152,24 Z" />
+    <!-- HUD content lines -->
+    <path
+        android:strokeColor="#FF9900"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000"
+        android:pathData="M154,32 L190,32" />
+    <path
+        android:strokeColor="#FF9900"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000"
+        android:pathData="M154,38 L180,38" />
+    <path
+        android:strokeColor="#FF9900"
+        android:strokeWidth="1"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000"
+        android:pathData="M154,44 L186,44" />
+
+    <!-- Camera -->
+    <path
+        android:fillColor="#3D4F5F"
+        android:pathData="M196,18 A6,6 0 1,1 196.01,18 Z" />
+    <path
+        android:fillColor="#556B7A"
+        android:pathData="M196,18 A3.5,3.5 0 1,1 196.01,18 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M196,18 A2,2 0 1,1 196.01,18 Z" />
+
+    <!-- LED -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M189,14 A1.5,1.5 0 1,1 189.01,14 Z" />
+
+    <!-- Right temple -->
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M212,32 L222,34 L222,48 L212,48 Z" />
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M222,34 L237,31 Q240,31 240,34 L240,38 Q240,40 238,42 L222,46 Z" />
+
+    <!-- "DISPLAY" label -->
+    <path
+        android:fillColor="#FF9900"
+        android:fillAlpha="0.7"
+        android:pathData="M148,100 L192,100 Q196,100 196,104 L196,108 Q196,112 192,112 L148,112 Q144,112 144,108 L144,104 Q144,100 148,100 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M155,103 L155,109 Q155,103 159,103 L159,109" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M162,103 L162,109" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M165,107 A3,3 0 1,1 171,107 L171,109 L165,109 Z" />
+</vector>

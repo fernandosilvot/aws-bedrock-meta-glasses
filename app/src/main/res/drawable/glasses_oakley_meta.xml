@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="120dp"
+    android:viewportWidth="280"
+    android:viewportHeight="120">
+
+    <!-- Oakley Meta - Sport wrap style -->
+
+    <!-- Left temple -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M2,38 Q0,36 0,34 L0,30 Q0,28 3,28 L20,32 L20,44 L3,46 Q0,46 0,44 Z" />
+
+    <!-- Left lens frame - angular sport wrap -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M20,14 L40,6 L95,6 Q108,6 110,18 L108,56 Q106,74 88,76 L40,74 Q20,72 20,54 Z" />
+    <!-- Left lens -->
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M26,18 L44,10 L92,10 Q104,10 105,20 L103,52 Q102,68 86,70 L44,68 Q26,66 26,50 Z" />
+    <path
+        android:fillColor="#232F3E"
+        android:pathData="M32,20 L52,14 L76,14 Q82,14 82,20 L80,32 Q78,36 72,36 L40,38 Q32,38 32,32 Z" />
+
+    <!-- Bridge -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M110,24 Q118,16 126,16 Q134,16 142,24 L142,34 Q134,24 126,22 Q118,24 110,34 Z" />
+
+    <!-- Right lens frame -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M142,18 Q144,6 158,6 L212,6 L232,14 L232,54 Q232,72 212,74 L164,76 Q146,74 144,56 Z" />
+    <!-- Right lens -->
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M148,20 Q150,10 162,10 L208,10 L226,16 L226,50 Q226,66 210,68 L168,70 Q150,68 149,52 Z" />
+    <path
+        android:fillColor="#232F3E"
+        android:pathData="M156,20 L172,14 L196,14 Q202,14 202,20 L200,32 Q198,36 192,36 L164,38 Q156,38 156,32 Z" />
+
+    <!-- Camera -->
+    <path
+        android:fillColor="#3D4F5F"
+        android:pathData="M218,14 A5,5 0 1,1 218.01,14 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M218,14 A2.5,2.5 0 1,1 218.01,14 Z" />
+
+    <!-- Right temple -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M232,32 L250,28 Q252,28 252,30 L252,34 Q252,36 250,38 L250,44 Q252,44 252,42 L252,38 L232,44 Z" />
+
+    <!-- "OAKLEY" text -->
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M100,92 A6,6 0 1,1 100,93 M100,92 A6,6 0 1,0 100,93" />
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M116,86 L120,96 L124,86 M118,92 L122,92" />
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M128,86 L128,96 M128,86 L134,86 M128,96 L134,96" />
+</vector>

@@ -1,0 +1,96 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="280dp"
+    android:height="120dp"
+    android:viewportWidth="280"
+    android:viewportHeight="120">
+
+    <!-- Ray-Ban Meta Wayfarer - Detailed silhouette -->
+
+    <!-- Left temple arm -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M2,42 Q0,40 0,38 L0,34 Q0,31 3,31 L18,34 L18,46 L3,48 Q0,48 0,46 Z" />
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M18,34 L28,32 L28,48 L18,46 Z" />
+
+    <!-- Left lens frame -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M28,18 Q28,8 42,8 L88,8 Q102,8 104,18 L106,52 Q108,72 92,76 L48,78 Q28,78 28,62 Z" />
+    <!-- Left lens glass -->
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M34,22 Q34,14 46,14 L84,14 Q96,14 98,22 L99,50 Q100,66 88,70 L52,72 Q34,72 34,58 Z" />
+    <!-- Left lens reflection -->
+    <path
+        android:fillColor="#232F3E"
+        android:pathData="M40,20 Q42,16 54,16 L70,16 Q74,16 74,20 L73,30 Q72,34 68,34 L46,35 Q40,35 40,30 Z" />
+
+    <!-- Bridge -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M104,28 Q110,20 116,18 L124,18 Q130,20 136,28 L136,36 Q130,28 124,26 L116,26 Q110,28 104,36 Z" />
+
+    <!-- Right lens frame -->
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M136,18 Q138,8 152,8 L198,8 Q212,8 212,18 L212,62 Q212,78 192,78 L148,76 Q132,72 134,52 Z" />
+    <!-- Right lens glass -->
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M142,22 Q142,14 154,14 L194,14 Q206,14 206,22 L206,58 Q206,72 190,72 L152,70 Q140,66 141,50 Z" />
+    <!-- Right lens reflection -->
+    <path
+        android:fillColor="#232F3E"
+        android:pathData="M148,20 Q150,16 162,16 L178,16 Q182,16 182,20 L181,30 Q180,34 176,34 L154,35 Q148,35 148,30 Z" />
+
+    <!-- Camera module (right lens, top-right) -->
+    <path
+        android:fillColor="#3D4F5F"
+        android:pathData="M196,18 A6,6 0 1,1 196.01,18 Z" />
+    <path
+        android:fillColor="#556B7A"
+        android:pathData="M196,18 A3.5,3.5 0 1,1 196.01,18 Z" />
+    <path
+        android:fillColor="#1A2332"
+        android:pathData="M196,18 A2,2 0 1,1 196.01,18 Z" />
+
+    <!-- LED capture indicator -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M189,14 A1.5,1.5 0 1,1 189.01,14 Z" />
+
+    <!-- Right temple arm -->
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M212,32 L222,34 L222,48 L212,48 Z" />
+    <path
+        android:fillColor="#FF9900"
+        android:pathData="M222,34 L237,31 Q240,31 240,34 L240,38 Q240,40 238,42 L237,48 Q240,48 240,46 L240,42 Q240,40 238,42 L222,46 Z" />
+
+    <!-- Speaker grille dots on right temple -->
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M226,38 A1,1 0 1,1 226.01,38 Z" />
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M230,38 A1,1 0 1,1 230.01,38 Z" />
+    <path
+        android:fillColor="#CC7A00"
+        android:pathData="M234,38 A1,1 0 1,1 234.01,38 Z" />
+
+    <!-- "meta" text label -->
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M108,95 L112,85 L116,95 M110,92 L114,92" />
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M120,85 L120,95 M120,85 L126,85 M120,90 L124,90 M120,95 L126,95" />
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M130,85 L136,85 M133,85 L133,95" />
+    <path
+        android:fillColor="#AAB7C4"
+        android:pathData="M140,95 L144,85 L148,95 M142,92 L146,92" />
+</vector>
