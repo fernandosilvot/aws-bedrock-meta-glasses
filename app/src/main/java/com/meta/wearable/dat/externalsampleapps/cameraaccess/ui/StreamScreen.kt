@@ -67,7 +67,7 @@ fun StreamScreen(
   val novaUiState by novaViewModel.uiState.collectAsStateWithLifecycle()
   val wearablesUiState by wearablesViewModel.uiState.collectAsStateWithLifecycle()
 
-  // Initialize Nova with frame provider
+  // Initialize Friday with frame provider
   LaunchedEffect(Unit) {
     streamViewModel.startStream()
     novaViewModel.initialize(
@@ -77,7 +77,7 @@ fun StreamScreen(
     novaViewModel.startListening()
   }
 
-  // Update Nova language when it changes
+  // Update Friday language when it changes
   LaunchedEffect(wearablesUiState.language) {
     novaViewModel.updateLanguage(wearablesUiState.language)
   }
@@ -131,7 +131,7 @@ fun StreamScreen(
       )
     }
 
-    // Nova overlay
+    // Friday overlay
     NovaOverlay(
         novaState = novaUiState,
         isSpanish = wearablesUiState.language == com.meta.wearable.dat.externalsampleapps.cameraaccess.wearables.AppLanguage.SPANISH,
@@ -161,7 +161,7 @@ fun StreamScreen(
             isDestructive = true,
             modifier = Modifier.weight(1f),
         )
-        // Manual Nova trigger (push-to-talk)
+        // Manual Friday trigger (push-to-talk)
         CircleButton(onClick = {
           if (novaUiState.state == NovaState.IDLE) {
             novaViewModel.activateManually()
