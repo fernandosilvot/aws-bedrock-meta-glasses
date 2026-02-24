@@ -156,7 +156,7 @@ fun NonStreamScreen(
         // Top: Title
         Column(horizontalAlignment = Alignment.CenterHorizontally) {
           Text(
-              text = "AWS Bedrock",
+              text = "Meta-Rock",
               fontSize = 32.sp,
               fontWeight = FontWeight.ExtraBold,
               color = AppColor.AwsOrange,
@@ -164,7 +164,7 @@ fun NonStreamScreen(
           )
           Spacer(modifier = Modifier.height(2.dp))
           Text(
-              text = "× Meta Glasses",
+              text = "Bedrock × Meta Glasses",
               fontSize = 14.sp,
               fontWeight = FontWeight.Medium,
               color = AppColor.MetaBlue.copy(alpha = 0.8f),

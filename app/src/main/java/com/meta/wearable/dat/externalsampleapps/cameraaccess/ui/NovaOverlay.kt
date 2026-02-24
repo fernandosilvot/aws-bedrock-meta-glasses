@@ -38,9 +38,11 @@ import com.meta.wearable.dat.externalsampleapps.cameraaccess.nova.NovaUiState
 @Composable
 fun NovaOverlay(
     novaState: NovaUiState,
+    isSpanish: Boolean = true,
     modifier: Modifier = Modifier,
 ) {
     val visible = novaState.state != NovaState.IDLE
+    val name = if (isSpanish) "Viernes" else "Friday"
 
     AnimatedVisibility(
         visible = visible,
@@ -59,12 +61,14 @@ fun NovaOverlay(
         ) {
             // Status row
             Row(verticalAlignment = Alignment.CenterVertically) {
+                val listening = if (isSpanish) "Escuchando..." else "Listening..."
+                val processing = if (isSpanish) "Procesando..." else "Processing..."
                 val (icon, label, color) = when (novaState.state) {
-                    NovaState.LISTENING -> Triple(Icons.Default.Mic, "Nova — Escuchando...", AppColor.AwsOrange)
-                    NovaState.PROCESSING -> Triple(Icons.Default.AutoAwesome, "Nova — Procesando...", AppColor.Yellow)
-                    NovaState.RESPONDING -> Triple(Icons.Default.AutoAwesome, "Nova", AppColor.Green)
-                    NovaState.ERROR -> Triple(Icons.Default.AutoAwesome, "Nova — Error", AppColor.Red)
-                    else -> Triple(Icons.Default.AutoAwesome, "Nova", Color.White)
+                    NovaState.LISTENING -> Triple(Icons.Default.Mic, "$name — $listening", AppColor.AwsOrange)
+                    NovaState.PROCESSING -> Triple(Icons.Default.AutoAwesome, "$name — $processing", AppColor.Yellow)
+                    NovaState.RESPONDING -> Triple(Icons.Default.AutoAwesome, name, AppColor.Green)
+                    NovaState.ERROR -> Triple(Icons.Default.AutoAwesome, "$name — Error", AppColor.Red)
+                    else -> Triple(Icons.Default.AutoAwesome, name, Color.White)
                 }
                 Icon(imageVector = icon, contentDescription = null, tint = color, modifier = Modifier.size(20.dp))
                 Spacer(modifier = Modifier.width(8.dp))

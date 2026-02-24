@@ -10,7 +10,7 @@
     <application
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
-        android:label="Nova AI"
+        android:label="Meta-Rock"
         android:supportsRtl="true"
         android:theme="@style/Theme.CameraAccess">
 

@@ -134,6 +134,7 @@ fun StreamScreen(
     // Nova overlay
     NovaOverlay(
         novaState = novaUiState,
+        isSpanish = wearablesUiState.language == com.meta.wearable.dat.externalsampleapps.cameraaccess.wearables.AppLanguage.SPANISH,
         modifier = Modifier
             .align(Alignment.BottomCenter)
             .padding(bottom = 130.dp),
@@ -170,7 +171,7 @@ fun StreamScreen(
         }) {
           Icon(
               imageVector = Icons.Filled.Mic,
-              contentDescription = "Nova",
+              contentDescription = "Viernes",
               tint = if (novaUiState.state != NovaState.IDLE) AppColor.Green else AppColor.AwsSquidInk,
           )
         }
