@@ -13,6 +13,9 @@
 
 Say **"Hey Friday"**, ask a question, and the app sends text + camera frame to Claude for analysis. Then it displays and reads the response aloud.
 
+<div align="center">
+<video src="https://github.com/user-attachments/assets/ee83b7aa-55e1-4458-ab42-aab93e9fd189" width="540" controls></video>
+</div>
 ---
 
 ## ✨ Features
@@ -196,6 +199,9 @@ Made with ❤️ in Chile 🇨🇱
 
 Dices **"Oye Viernes"**, haces una pregunta, y la app envía texto + imagen de la cámara a Claude para análisis. Luego muestra y lee la respuesta en voz alta.
 
+<div align="center">
+<video src="https://github.com/user-attachments/assets/ee83b7aa-55e1-4458-ab42-aab93e9fd189" width="540" controls></video>
+</div>
 ---
 
 ## ✨ Características
