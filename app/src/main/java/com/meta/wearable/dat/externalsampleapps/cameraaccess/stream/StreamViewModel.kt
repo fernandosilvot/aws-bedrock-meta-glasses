@@ -109,15 +109,15 @@ class StreamViewModel(
     _uiState.update { INITIAL_STATE }
   }
 
-  fun capturePhoto() {
+  fun capturePhoto(forAnalysis: Boolean = false, onCaptured: ((Bitmap) -> Unit)? = null) {
     if (uiState.value.isCapturing) {
       Log.d(TAG, "Photo capture already in progress, ignoring request")
       return
     }
 
     if (uiState.value.streamSessionState == StreamSessionState.STREAMING) {
-      Log.d(TAG, "Starting photo capture")
-      _uiState.update { it.copy(isCapturing = true) }
+      Log.d(TAG, "Starting photo capture (forAnalysis=$forAnalysis)")
+      _uiState.update { it.copy(isCapturing = true, isPhotoForAnalysis = forAnalysis) }
 
       viewModelScope.launch {
         streamSession
@@ -126,10 +126,15 @@ class StreamViewModel(
               Log.d(TAG, "Photo capture successful")
               handlePhotoData(photoData)
               _uiState.update { it.copy(isCapturing = false) }
+              
+              // Call callback if provided
+              if (forAnalysis && onCaptured != null) {
+                uiState.value.capturedPhoto?.let { onCaptured(it) }
+              }
             }
             ?.onFailure {
               Log.e(TAG, "Photo capture failed")
-              _uiState.update { it.copy(isCapturing = false) }
+              _uiState.update { it.copy(isCapturing = false, isPhotoForAnalysis = false) }
             }
       }
     } else {
@@ -227,7 +232,18 @@ class StreamViewModel(
             decodeHeic(byteArray, transform)
           }
         }
-    _uiState.update { it.copy(capturedPhoto = capturedPhoto, isShareDialogVisible = true) }
+    
+    // Show share dialog only if not for analysis
+    val showDialog = !uiState.value.isPhotoForAnalysis
+    val wasForAnalysis = uiState.value.isPhotoForAnalysis
+    
+    Log.d(TAG, "Photo handled - forAnalysis=$wasForAnalysis showDialog=$showDialog")
+    
+    _uiState.update { it.copy(
+        capturedPhoto = capturedPhoto, 
+        isShareDialogVisible = showDialog,
+        isPhotoForAnalysis = false
+    ) }
   }
 
   // HEIC Decoding with EXIF transformation

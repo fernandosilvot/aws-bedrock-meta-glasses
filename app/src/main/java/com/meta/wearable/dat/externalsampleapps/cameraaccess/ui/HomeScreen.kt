@@ -53,6 +53,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 @Composable
 fun HomeScreen(
     viewModel: WearablesViewModel,
+    onNavigateToChat: () -> Unit = {},
     modifier: Modifier = Modifier,
 ) {
   val scrollState = rememberScrollState()
@@ -135,6 +136,10 @@ fun HomeScreen(
             textAlign = TextAlign.Center,
             fontSize = 13.sp,
             modifier = Modifier.padding(horizontal = 24.dp),
+        )
+        SwitchButton(
+            label = "💬 Modo Chat (sin lentes)",
+            onClick = onNavigateToChat,
         )
         SwitchButton(
             label = localizedString(R.string.register_button_title),

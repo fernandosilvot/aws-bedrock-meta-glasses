@@ -46,6 +46,8 @@ import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -72,6 +74,7 @@ fun CameraAccessScaffold(
   val snackbarHostState = remember { SnackbarHostState() }
   val bottomSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
   val languageSheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+  var showChatScreen by remember { mutableStateOf(false) }
 
   LaunchedEffect(uiState.recentError) {
     uiState.recentError?.let { errorMessage ->
@@ -100,7 +103,10 @@ fun CameraAccessScaffold(
                   onRequestWearablesPermission = onRequestWearablesPermission,
               )
           else ->
-              HomeScreen(viewModel = viewModel)
+              HomeScreen(
+                  viewModel = viewModel,
+                  onNavigateToChat = { showChatScreen = true }
+              )
         }
 
         SnackbarHost(

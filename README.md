@@ -23,7 +23,10 @@ Say **"Hey Friday"**, ask a question, and the app sends text + camera frame to C
 ### 🎙️ Voice Assistant — Friday
 - Wake word: `"Hey Friday"` / `"Oye Viernes"`
 - Real-time speech recognition
-- Text-to-Speech (TTS) responses
+- **Dual TTS engines**:
+  - **ElevenLabs** (premium, JARVIS-quality) 🎯
+  - **Android TTS** (fallback, offline)
+- 4 voice profiles: hybrid, classic, conversational, robotic
 
 ### 📹 Camera Streaming
 - Live stream from Meta Ray-Ban in **high quality (720p, 30fps)**
@@ -209,7 +212,10 @@ Dices **"Oye Viernes"**, haces una pregunta, y la app envía texto + imagen de l
 ### 🎙️ Asistente de Voz — Viernes
 - Palabra de activación: `"Oye Viernes"` / `"Hey Friday"`
 - Reconocimiento de voz en tiempo real
-- Respuestas por Text-to-Speech (TTS)
+- **Dos motores TTS**:
+  - **ElevenLabs** (premium, calidad JARVIS) 🎯
+  - **Android TTS** (fallback, offline)
+- 4 perfiles de voz: hybrid, classic, conversational, robotic
 
 ### 📹 Streaming de Cámara
 - Transmisión en vivo desde Meta Ray-Ban en **alta calidad (720p, 30fps)**

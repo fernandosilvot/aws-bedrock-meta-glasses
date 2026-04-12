@@ -42,7 +42,7 @@ fun NovaOverlay(
     modifier: Modifier = Modifier,
 ) {
     val visible = novaState.state != NovaState.IDLE
-    val name = if (isSpanish) "Viernes" else "Friday"
+    val name = "J.A.R.V.I.S."
 
     AnimatedVisibility(
         visible = visible,

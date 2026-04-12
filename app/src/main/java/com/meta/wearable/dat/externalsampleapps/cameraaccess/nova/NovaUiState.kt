@@ -8,6 +8,9 @@ data class NovaUiState(
     val response: String? = null,
     val sentWithImage: Boolean = false,
     val error: String? = null,
+    val shouldActivateCamera: Boolean = false,
+    val shouldDeactivateCamera: Boolean = false,
+    val shouldCapturePhoto: Boolean = false,
 )
 
 enum class NovaState {

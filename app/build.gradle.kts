@@ -10,6 +10,7 @@ plugins {
   alias(libs.plugins.android.application)
   alias(libs.plugins.jetbrains.kotlin.android)
   alias(libs.plugins.compose.compiler)
+  alias(libs.plugins.kotlin.serialization)
 }
 
 import java.util.Properties
@@ -36,6 +37,8 @@ android {
     buildConfigField("String", "AWS_ACCESS_KEY", "\"${lp.getProperty("aws_access_key", "")}\"")
     buildConfigField("String", "AWS_SECRET_KEY", "\"${lp.getProperty("aws_secret_key", "")}\"")
     buildConfigField("String", "AWS_REGION", "\"${lp.getProperty("aws_region", "us-east-1")}\"")
+    buildConfigField("String", "ELEVENLABS_API_KEY", "\"${lp.getProperty("elevenlabs_api_key", "")}\"")
+    buildConfigField("String", "ELEVENLABS_VOICE_ID", "\"${lp.getProperty("elevenlabs_voice_id", "")}\"")
 
     manifestPlaceholders["META_APPLICATION_ID"] = lp.getProperty("meta_application_id", "0")
   }
@@ -82,6 +85,8 @@ dependencies {
   implementation(libs.mwdat.camera)
   implementation(libs.mwdat.mockdevice)
   implementation(libs.aws.bedrockruntime)
+  implementation("com.squareup.okhttp3:okhttp:4.12.0")
+  implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
   androidTestImplementation(libs.androidx.ui.test.junit4)
   androidTestImplementation(libs.androidx.test.uiautomator)
   androidTestImplementation(libs.androidx.test.rules)

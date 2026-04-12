@@ -1,0 +1,17 @@
+# Android SDK
+sdk.dir=/Users/YOUR_USER/Library/Android/sdk
+
+# GitHub Token (para Meta SDK)
+github_token=YOUR_GITHUB_TOKEN
+
+# AWS Credentials
+aws_access_key=YOUR_AWS_ACCESS_KEY
+aws_secret_key=YOUR_AWS_SECRET_KEY
+aws_region=us-east-1
+
+# Meta Application ID
+meta_application_id=YOUR_META_APP_ID
+
+# ElevenLabs Credentials (opcional - si no se configura, usa Android TTS)
+elevenlabs_api_key=YOUR_ELEVENLABS_API_KEY
+elevenlabs_voice_id=YOUR_ELEVENLABS_VOICE_ID

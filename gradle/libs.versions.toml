@@ -1,6 +1,7 @@
 [versions]
 agp = "8.6.0"
 kotlin = "2.3.0"
+kotlinSerialization = "2.3.0"
 activityCompose = "1.10.1"
 composeBom = "2024.04.01"
 mwdat = "0.4.0"
@@ -33,3 +34,4 @@ aws-bedrockruntime = { group = "aws.sdk.kotlin", name = "bedrockruntime", versio
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlinSerialization" }

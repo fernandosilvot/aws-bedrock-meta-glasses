@@ -20,7 +20,7 @@ class SpeechManager(
 ) {
     companion object {
         private const val TAG = "SpeechManager"
-        private val WAKE_WORDS = listOf("oye viernes", "hey friday", "oye biernes", "hey viernes")
+        private val WAKE_WORDS = listOf("jarvis", "jarvis", "yarbis", "jarbis", "harvey")
     }
 
     private var recognizer: SpeechRecognizer? = null
